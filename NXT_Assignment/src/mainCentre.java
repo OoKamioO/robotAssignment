@@ -1,4 +1,6 @@
 import lejos.nxt.*;
+import lejos.robotics.subsumption.Arbitrator;
+import lejos.robotics.subsumption.Behavior;
 
 /*
  * Author: Trent Nguyen C13559217
@@ -10,6 +12,12 @@ public class mainCentre
 	
 	public static void main(String[] args) 
 	{
-		printScreen = new printAssignment("Hello World");
+		Behavior b1 = new printAssignment("Assignment 1");
+		Behavior b2 = new clapMove(SensorPort.S2);
+		
+		Behavior[] bArray = {b1, b2};
+		
+		Arbitrator arby = new Arbitrator(bArray);
+		arby.start();
 	}
 }
