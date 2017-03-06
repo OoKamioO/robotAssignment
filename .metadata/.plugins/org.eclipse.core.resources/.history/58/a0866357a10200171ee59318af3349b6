@@ -1,6 +1,7 @@
 import lejos.nxt.*;
 import lejos.robotics.subsumption.*;
 
+
 public class printAssignment implements Behavior
 {	
 	String text;

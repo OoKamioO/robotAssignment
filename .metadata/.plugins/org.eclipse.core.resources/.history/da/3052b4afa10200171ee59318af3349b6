@@ -42,8 +42,6 @@ public class sonarMove implements Behavior
 		{
 			Motor.A.forward();
 			Motor.C.forward();
-			
-			newDistance = sonar.getDistance();
 		}
 		
 		Motor.A.rotate(-90, true);
