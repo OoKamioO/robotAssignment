@@ -1,0 +1,11 @@
+import lejos.nxt.*;
+
+public class mainCentre 
+{
+	static printAssignment printScreen;
+	
+	public static void main(String[] args) 
+	{
+		printScreen = new printAssignment("Hello World");
+	}
+}

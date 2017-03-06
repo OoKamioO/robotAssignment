@@ -1,0 +1,15 @@
+import lejos.nxt.*;
+
+/*
+ * Author: Trent Nguyen C13559217
+ */
+
+public class mainCentre 
+{
+	static printAssignment printScreen;
+	
+	public static void main(String[] args) 
+	{
+		printScreen = new printAssignment("Hello World");
+	}
+}
