@@ -5,7 +5,6 @@ public class sonarMove implements Behavior
 {
 	private boolean suppressed = false;
 	private UltrasonicSensor sonar;
-	
 	private int currentDistance;
 	private int newDistance;
 	private int distanceBeforeStop;
