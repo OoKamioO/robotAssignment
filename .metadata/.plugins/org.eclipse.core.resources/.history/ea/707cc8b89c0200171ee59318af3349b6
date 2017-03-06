@@ -27,7 +27,7 @@ public class clapMove implements Behavior
 	{
 		suppressed = false;
 		
-		LCD.drawString("Claps", 0, 4);
+		LCD.drawString("Clap", 0, 4);
 		
 		Motor.A.rotate(-180, true);
 		Motor.C.rotate(-360, true);
