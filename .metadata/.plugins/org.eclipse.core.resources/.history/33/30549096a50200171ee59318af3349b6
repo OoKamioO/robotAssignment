@@ -1,0 +1,38 @@
+import lejos.nxt.*;
+import lejos.robotics.subsumption.*;
+
+public class darkSensorMove implements Behavior
+{
+	LightSensor ls;
+	TouchSensor ts;
+	
+	public darkSensorMove(SensorPort port1, SensorPort port2)
+	{
+		ls = new LightSensor(port1);
+		ts = new TouchSensor(port2);
+	}
+	
+	@Override
+	public boolean takeControl() 
+	{
+		if(ls.getLightValue() < 20)
+		{
+			return true;
+		}
+		
+		return false;
+	}
+
+	@Override
+	public void action() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void suppress() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
