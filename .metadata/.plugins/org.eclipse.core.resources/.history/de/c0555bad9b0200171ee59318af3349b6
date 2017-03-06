@@ -15,7 +15,7 @@ public class mainCentre
 		Behavior b1 = new printAssignment("Assignment 1");
 		Behavior b2 = new clapMove(SensorPort.S2);
 		
-		Behavior[] bArray = {b1, b2};
+		Behavior[] bArray = {b1};
 		
 		Arbitrator arby = new Arbitrator(bArray);
 		arby.start();
