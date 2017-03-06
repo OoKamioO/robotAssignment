@@ -22,13 +22,12 @@ public class printAssignment implements Behavior
 		suppressed = true;
 	}
 	
-	public void action()
+	public void aciton()
 	{
 		suppressed = false;
 		
 		LCD.drawString(text, 0, 4);
 		
-		Button.waitForAnyPress();
 		while(!suppressed)
 		{
 			LCD.drawString("", 0, 4);

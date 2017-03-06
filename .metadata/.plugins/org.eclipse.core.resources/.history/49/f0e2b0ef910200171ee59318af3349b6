@@ -10,6 +10,6 @@ public class mainCentre
 	
 	public static void main(String[] args) 
 	{
-		printScreen = new printAssignment("Assignment 1");
+		printScreen = new printAssignment("Hello World");
 	}
 }

@@ -28,7 +28,6 @@ public class printAssignment implements Behavior
 		
 		LCD.drawString(text, 0, 4);
 		
-		Button.waitForAnyPress();
 		while(!suppressed)
 		{
 			LCD.drawString("", 0, 4);
